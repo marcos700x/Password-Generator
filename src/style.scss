@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+$blue: #0099ff;
+$deepBlue: #114c7c;
+$background: #151a32;
+$borderRadius: 2px;
+$transition: all .3s ease;
+
+.App {
+    background-color: $background;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+.container{
+display: flex;
+flex-direction: column;
+max-width: 500px;
+gap: 30px;
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    label {
+        color: white;
+        font-size: 1.2rem;
+    }
+    button{
+        background-color: $blue;
+        color: white;
+        padding: 6px 0;
+        width: 200px;
+        border-radius: $borderRadius;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        font-size: 1.2rem;
+        transition: $transition;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    p{
+        color: white;
+        text-align: center;
+        width: 100%;
+        animation-name: slideUp;
+        opacity: 0;
+        animation-duration: 1.5s;
+        transform: translateY(200%);
+    }
+    @keyframes slideUp{
+        40%{
+            transform: translateY(0%);
+        opacity: 1;
+
+        }
+        100%{
+        transform: translateY(200%);
+        opacity: 0;
+
+        }
+       
+      }
+    .generateBtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .inputDisabled{
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: $borderRadius;
+        height: 100%;
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .copyPassword{
+        background-color:white;
+        width: 20%;
+    }
+}
+}
+
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0;
+
+    button {
+        font-size: 1.5rem;
+        height: 100%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 50px!important;
+        background-color: $blue;
+        color: white;
+        transition: $transition;
+
+        &:nth-child(1) {
+            border-radius: $borderRadius 0 0 $borderRadius;
+        }
+
+        &:last-child {
+            border-radius: 0 $borderRadius $borderRadius 0;
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+
+    }
+
+    input {
+        font-size: 1.2rem;
+        background-color: $deepBlue;
+        color: white;
+        height: 100%;
+        width: 100px;
+        appearance: none;
+        outline: none;
+        border: none;
+        padding: .7em 1em;
+        text-align: center;
+    }
+}
+
