@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Generador-Contrase-as/static/css/main.a6628d1b.css",
+    "main.js": "/Generador-Contrase-as/static/js/main.75261bd9.js",
+    "index.html": "/Generador-Contrase-as/index.html",
+    "main.a6628d1b.css.map": "/Generador-Contrase-as/static/css/main.a6628d1b.css.map",
+    "main.75261bd9.js.map": "/Generador-Contrase-as/static/js/main.75261bd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6628d1b.css",
+    "static/js/main.75261bd9.js"
+  ]
+}
