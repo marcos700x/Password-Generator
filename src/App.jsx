@@ -82,7 +82,7 @@ function App() {
 if(copyState){
   setTimeout(() => {
     setCopyState(!copyState)
-  }, 1500);
+  }, 2000);
 }
   useEffect(()=>{
     generateRandomString(valueInput)
@@ -120,12 +120,12 @@ if(copyState){
       <div className="row">
         <button className='generateBtn' onClick={() => generateRandomString(valueInput)}>Generar<FcLock/></button>
       </div>
-      <div className="row">
+      <div className="lastRow">
         <input className='inputDisabled' id='inputPassword' type="text" disabled value={password}/>
-        <button onClick={copyToClipBoard} title='Copy to clipboard' className='copyPassword'>{copyState ? <ImCheckmark color='#0f0'/> : <HiClipboard color='#09f'/>}</button>
+        <button onClick={copyToClipBoard} title='Copy to clipboard' className='copyPassword'>{copyState ? <ImCheckmark size='1.5em' color='#0f0'/> : <HiClipboard size='1.5em'  color='#09f'/>}</button>
       </div>
-      <div className="row">
-        {copyState ? <p>¡Copiado al portapapeles!</p> : null}
+      <div className="copyInfo">
+        {copyState ? <p className='copyText'>¡Copiado al portapapeles!</p> : null}
       </div>
       </div>
     </div>
