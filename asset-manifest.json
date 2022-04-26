@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Generador-Contrase-as/static/css/main.a6628d1b.css",
-    "main.js": "/Generador-Contrase-as/static/js/main.75261bd9.js",
-    "index.html": "/Generador-Contrase-as/index.html",
-    "main.a6628d1b.css.map": "/Generador-Contrase-as/static/css/main.a6628d1b.css.map",
-    "main.75261bd9.js.map": "/Generador-Contrase-as/static/js/main.75261bd9.js.map"
+    "main.css": "/Password-Generator/static/css/main.58016a17.css",
+    "main.js": "/Password-Generator/static/js/main.e2cc70c8.js",
+    "index.html": "/Password-Generator/index.html",
+    "main.58016a17.css.map": "/Password-Generator/static/css/main.58016a17.css.map",
+    "main.e2cc70c8.js.map": "/Password-Generator/static/js/main.e2cc70c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6628d1b.css",
-    "static/js/main.75261bd9.js"
+    "static/css/main.58016a17.css",
+    "static/js/main.e2cc70c8.js"
   ]
 }
